@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Drip - Rappers T-Shirts and Hoodies</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <h1>Star Drip
+15% sale</h1>
+
+    <!-- Snowflakes (added dynamically by JavaScript) -->
+    <div id="snowflakes-container"></div>
+
+    <!-- Product Grid -->
+    <div class="products-container">
+        <!-- Hoodie Products -->
+        <div class="product">
+            <img src="tyler.jpg" alt="Hoodie 1" class="product-image">
+            <p>CHROME WORLD WHITE T-SHIRT</p>
+        </div>
+        <div class="product">
+            <img src="music.jpg" alt="Hoodie 2" class="product-image">
+            <p>SYSTEM OF A DOWN BLACK T-SHIRT</p>
+        </div>
+        <div class="product">
+            <img src="starboy.jpg" alt="Hoodie 3" class="product-image">
+            <p>STARBOY RED T-SHIRT</p>
+        </div>
+        <div class="product">
+            <img src="rolling.jpg" alt="Hoodie 4" class="product-image">
+            <p>ROLLING STONES BABY BLUE T-SHIRT</p>
+        </div>
+        <div class="product">
+            <img src="14.jpg" alt="Hoodie 5" class="product-image">
+            <p>TRIPPIE REDD BLACK T-SHIRT</p>
+        </div>
+
+        <!-- T-Shirt Products -->
+        <div class="product">
+            <img src="asap.jpg" alt="T-Shirt 1" class="product-image">
+            <p>ASAP ROCKY WHITE T-SHIRT</p>
+        </div>
+        <div class="product">
+            <img src="tree.jpg" alt="T-Shirt 2" class="product-image">
+            <p>POISON TREE BLACK T-SHIRT</p>
+        </div>
+        <div class="product">
+            <img src="ovo.jpg" alt="T-Shirt 3" class="product-image">
+            <p>OVO DRAKE BLUE T-SHIRT</p>
+        </div>
+        <div class="product">
+            <img src="uzi.jpg" alt="T-Shirt 4" class="product-image">
+            <p>LIL UZI VERT PINK T-SHIRT</p>
+        </div>
+        <div class="product">
+            <img src="tupac.jpg" alt="T-Shirt 5" class="product-image">
+            <p>TUPAC SHAKUR WHITE T-SHIRT</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Snowflakes -->
+    <script>
+        // JavaScript to create snowflakes dynamically
+        const snowflakesContainer = document.getElementById('snowflakes-container');
+
+        // Create 50 snowflakes
+        for (let i = 0; i < 50; i++) {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.textContent = '❄'; // Snowflake symbol
+            snowflake.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+            snowflake.style.animationDuration = Math.random() * 10 + 5 + 's'; // Random speed
+            snowflakesContainer.appendChild(snowflake);
+        }
+    </script>
+
+</body>
+</html>
